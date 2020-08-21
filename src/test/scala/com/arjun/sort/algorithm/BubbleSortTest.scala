@@ -13,11 +13,11 @@ class BubbleSortTest extends TestCase {
 	}
 
 
-	def testSortArray: Unit ={
-		val input = Array(100,30,70,90,15)
-		val expectedResult = Array(15,30,70,90,100)
-		val actaulResult = bubbleSort.sortArray(input)
-		assertEquals(expectedResult,actaulResult)
+	def testSortList: Unit ={
+		val input = Array(100,90,80,70,60)
+		val expectedResult = Array(60,70,80,90,100)
+		val actaulResult = bubbleSort.sortList(input)
+		assertArrayEquals(expectedResult,actaulResult)
 	}
 
 
