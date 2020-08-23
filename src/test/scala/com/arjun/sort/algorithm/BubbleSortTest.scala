@@ -20,6 +20,14 @@ class BubbleSortTest extends TestCase {
 		assertArrayEquals(expectedResult,actaulResult)
 	}
 
+	def testSortListRecursive: Unit ={
+		val input = List(100,90,80,70,60)
+		val expectedResult = List(60,70,80,90,100)
+		val actaulResult = bubbleSort.recursiveBubbleSort(input)
+		assertEquals(expectedResult,actaulResult)
+	}
+
+
 
 
 
